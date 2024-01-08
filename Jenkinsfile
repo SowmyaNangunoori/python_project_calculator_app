@@ -7,9 +7,10 @@ pipeline {
                 
             }
         }
-      stage('deploy'){
-        sh 'python3 calculator_app.py'
-      
+        stage('deploy'){
+            steps{
+                sh 'python3 calculator_app.py'
+          }
       }
     }
 }
